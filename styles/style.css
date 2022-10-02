@@ -262,7 +262,7 @@ h6 {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.348);
+  background-color: rgba(0, 0, 0, 0.448);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -309,9 +309,17 @@ h6 {
 }
 
 .gallery__content__sign {
-  width: 40%
-}
+  width: 40%;
 
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__content__sign img {
+  height: 100%;
+}
 .footer__block {}
 
 .footer__block__container {}
