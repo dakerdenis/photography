@@ -109,7 +109,7 @@ h6 {
 /***********/
 /***********/
 .navigation__container {
-  width: 30%;
+  width: 25%;
   height: 100vh;
   background-color: #000;
 }
@@ -152,16 +152,29 @@ h6 {
   width: 100%;
   text-align: center;
   color: rgba(255, 255, 255, 0.616);
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   margin-top: 12px;
   text-transform: uppercase;
 }
-.navigation__nav_container {}
+.navigation__nav_container {
+  margin-top: 18%;
+}
 
-.navigation__elements {}
+.navigation__elements {
+  display: flex;
+  flex-direction: column;
+}
 
-.navigation__element {}
+.navigation__element {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+}
+.navigation__element a {
+  display: block;
+  width: 100%;
+  padding: 12px 0px;
+  color: rgba(255, 255, 255, 0.616);
+}
 
 .navigation__social_container {}
 
@@ -175,7 +188,7 @@ h6 {
 /***********/
 .content__container {
   height: 100%;
-  width: 70%;
+  width: 75%;
   overflow: scroll;
 }
 
