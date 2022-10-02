@@ -287,9 +287,16 @@ h6 {
   font-weight: 600;
 
 }
-.content__block__gallery {}
+.content__block__gallery {
+  background-color: #101010;
 
-.gallery__content {}
+}
+
+.gallery__content {
+  color: rgba(255, 255, 255, 0.616);
+  width: 60%;
+  margin: 0 auto;
+}
 
 .gallery__content__desc {}
 
