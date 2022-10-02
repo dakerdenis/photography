@@ -221,11 +221,25 @@ h6 {
   overflow: scroll;
 }
 
-.content__wrapper {}
+.content__wrapper {
+  width: 100%;
+  height: 100%;
+}
 
-.content__block_wallpaper {}
+.content__block_wallpaper {
+  width: 100%;
 
-.content__block_img {}
+}
+
+.content__block_img {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+.content__block_img img {
+  width: 100%;
+  object-fit: cover;
+}
 
 .__block_img-text {}
 
