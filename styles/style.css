@@ -294,13 +294,23 @@ h6 {
 
 .gallery__content {
   color: rgba(255, 255, 255, 0.616);
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
+
 }
 
-.gallery__content__desc {}
+.gallery__content__desc {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5em;
+  color: #999;
+  font-weight: 400;
+}
 
-.gallery__content__photos {}
+.gallery__content__sign {
+  width: 40%
+}
 
 .footer__block {}
 
