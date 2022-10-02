@@ -167,23 +167,52 @@ h6 {
 }
 
 .navigation__element {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .navigation__element a {
   display: block;
   width: 100%;
   padding: 12px 0px;
   color: rgba(255, 255, 255, 0.616);
+  transition: ease-in-out 0.25s;
+}
+.navigation__element a:hover{
+  color: #fff;
+}
+.navigation__social_container {
+  margin-top: 35%;
+  text-align: center;
 }
 
-.navigation__social_container {}
+.navigation__social__wrapper {
+  width: 100%;
+}
 
-.navigation__social__wrapper {}
+.navigation__social_icons {
+  display: flex;
+  margin: 0 auto;
+  width: 35%;
+  justify-content: space-between;
+}
+.navigation__social_icons a {
+  display: block;
 
-.navigation__social_icons {}
+  width: 25px;
+  height: 25px;
 
-.navigation__social_desc {}
-
+}
+.navigation__social_icons a img {
+  width: 100%;
+  object-fit: contain;
+}
+.navigation__social_desc {
+  margin-top: 5%;
+  
+}
+.navigation__social_desc p {
+  font-size: 12px;
+  font-weight: 500;
+}
 /***********/
 /***********/
 .content__container {
