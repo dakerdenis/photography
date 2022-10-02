@@ -270,8 +270,55 @@ h6 {
 .__block_img-text-container{
   width: 30%;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+
+}
+.__block_img_text-block{
+  width: 100%;
+  animation-name: Appearance;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+
+  --b:5px;   /* thickness of the border */
+  --c:rgba(255, 255, 255, 0.678);   /* color of the border */
+  --w:20px;  /* width of border */
+  
+
+  border:var(--b) solid transparent; /* space for the border */
+  background:
+    linear-gradient(var(--c),var(--c)) top left,
+    linear-gradient(var(--c),var(--c)) top left,
+    linear-gradient(var(--c),var(--c)) bottom left,
+    linear-gradient(var(--c),var(--c)) bottom left,
+    linear-gradient(var(--c),var(--c)) top right,
+    linear-gradient(var(--c),var(--c)) top right,
+    linear-gradient(var(--c),var(--c)) bottom right,
+    linear-gradient(var(--c),var(--c)) bottom right;
+  background-size:var(--b) var(--w),var(--w) var(--b);
+  background-origin:border-box;
+  background-repeat:no-repeat;
+  padding: 28px;
+}
+@-webkit-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
+@-o-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 .__block_img-text-container p {
   text-align: center;
   color: rgba(255, 255, 255, 0.616);
