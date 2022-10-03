@@ -1,0 +1,106 @@
+.about__page__container {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+.about__page_name {
+    width: 100%;
+    text-align: center;
+
+}
+.about__page_name p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.616);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.about__page_name h4 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 11px;
+}
+
+
+.about__page__img {
+    margin-top: 2.5rem;
+    width: 100%;
+    position: relative;
+}
+.about__page__img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+.about__page_img_filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.248);
+}
+.about__page__desc {
+    margin-top: 2rem;
+}
+.about__page_desc_name {
+}
+.about__page_desc_name p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+}
+.about__page_desc_name h3{
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5em;
+} 
+.about__page__desc_text p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0 0 20px;
+    color: #999;
+    font-weight: 400;
+}
+.about__page__desc__sign {
+    width: 100%;
+
+}
+.about__page__desc__sign-img {
+    width: 20%;
+}
+.about__page__desc__sign-img  img {
+    width: 100%;
+    object-fit: cover;
+}
+.about__page__photos_about {
+    width: 100%;
+}
+.about__page__photos__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.about__page__photos__img {
+    width: 32%;
+    overflow: hidden;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about__page__photos__img img {
+    height: 100%;
+    object-fit: cover;
+}
