@@ -1,0 +1,28 @@
+.blog__container {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+}
+.blog__desc {
+    width: 100%;
+    text-align: center;
+}
+.blog__desc p {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+}
+.blog__desc  h3{
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5em;
+}
