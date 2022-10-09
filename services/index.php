@@ -1,3 +1,26 @@
+<?php
+    include '../vendor/db.php';
+    if (isset($_GET['service_id'])){
+        $service_id = $_GET['service_id'];
+
+
+
+        $query = "SELECT * FROM `services` WHERE id = '{$service_id}'";
+        $select__service = mysqli_query($connection, $query);
+        $row = mysqli_fetch_assoc($select__service);
+            $id = $row['id'];
+            $name = $row['name'];
+            $main_img = $row['main_img'];
+            $description = $row['description'];
+            $list_image = $row['list_image'];
+
+
+
+    } else {
+        header("Location: ../services.html " );
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,10 +28,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
+    <title>Wedding Shoots</title>
 
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <!--services styles--->
+    <link rel="stylesheet" href="../styles/services.css">
+    <!-- services php styles-->
     <link rel="stylesheet" href="./styles/services.css">
 </head>
 
@@ -24,7 +49,7 @@
                     <div class="navigation__logo">
                         <a href="#">
                             <div class="navigation__img">
-                                <img src="./styles/img/logo.png" alt="" />
+                                <img src="../styles/img/logo.png" alt="" />
                             </div>
                             <div class="navigation__text">Victoria Lipnitskaya
                             </div>
@@ -37,19 +62,19 @@
                         <div class="navigation__elements">
                             <!--ссылка---->
                             <div class="navigation__element">
-                                <a href="./index.html">Home</a>
+                                <a href="../index.html">Home</a>
                             </div>
                             <!--ссылка---->
                             <div class="navigation__element">
-                                <a href="./about.html">About</a>
+                                <a href="../about.html">About</a>
                             </div>
                             <!--ссылка---->
                             <div class="navigation__element">
-                                <a href="./services.html">Services</a>
+                                <a href="../services.html">Services</a>
                             </div>
                             <!--ссылка---->
                             <div class="navigation__element">
-                                <a href="./gallery.html">Gallery</a>
+                                <a href="../gallery.html">Gallery</a>
                             </div>
                             <!--ссылка---->
                             <div class="navigation__element">
@@ -57,11 +82,11 @@
                             </div>
                             <!--ссылка---->
                             <div class="navigation__element">
-                                <a href="./blog.html">Blog</a>
+                                <a href="../blog.html">Blog</a>
                             </div>
                             <!--ссылка---->
                             <div class="navigation__element">
-                                <a href="./contact.html">Contact</a>
+                                <a href="../contact.html">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -71,16 +96,16 @@
                         <div class="navigation__social__wrapper">
                             <div class="navigation__social_icons">
                                 <a href="#">
-                                    <img src="./styles/img/insta.png" alt="" />
+                                    <img src="../styles/img/insta.png" alt="" />
                                 </a>
                                 <a href="#">
-                                    <img src="./styles/img/fb.png" alt="" />
+                                    <img src="../styles/img/fb.png" alt="" />
                                 </a>
                                 <a href="#">
-                                    <img src="./styles/img/yt.png" alt="" />
+                                    <img src="../styles/img/yt.png" alt="" />
                                 </a>
                                 <a href="#">
-                                    <img src="./styles/img/fb.png" alt="" />
+                                    <img src="../styles/img/fb.png" alt="" />
                                 </a>
                             </div>
                             <div class="navigation__social_desc">
@@ -97,7 +122,21 @@
                 <div class="content__wrapper">
 
                     <!---services php container--->
+                    <div class="services__container">
+                        <div class="services__page_name">
+                            <p>SERVICES</p>
+                            <h4><?php echo $name; ?></h4>
+                        </div>
 
+                        <div class="services__block_mainimg">
+                            <img src="../styles/img/services/<?php echo $main_img;?>" alt="">
+                        </div>
+                        <div class="services__block__descpription">
+                            <p>
+                                <?php echo $description; ?>
+                            </p>
+                        </div>
+                    </div>
                     <!--main page footer---->
                     <div class="footer__block">
                         <div class="footer__block__container">

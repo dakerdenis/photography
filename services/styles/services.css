@@ -1,0 +1,21 @@
+.services__block_mainimg{
+    width:100%;
+    background-color: red;
+    overflow: hidden;
+    height:70vh;
+    display: flex;
+
+}
+.services__block_mainimg img {
+    width:100%;
+    object-fit: cover;
+}
+.services__block__descpription{
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 20px 0px;
+    color: #999;
+    font-weight: 400;
+}
