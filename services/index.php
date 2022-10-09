@@ -1,24 +1,21 @@
 <?php
-    include '../vendor/db.php';
-    if (isset($_GET['service_id'])){
-        $service_id = $_GET['service_id'];
+include '../vendor/db.php';
+if (isset($_GET['service_id'])) {
+    $service_id = $_GET['service_id'];
 
 
 
-        $query = "SELECT * FROM `services` WHERE id = '{$service_id}'";
-        $select__service = mysqli_query($connection, $query);
-        $row = mysqli_fetch_assoc($select__service);
-            $id = $row['id'];
-            $name = $row['name'];
-            $main_img = $row['main_img'];
-            $description = $row['description'];
-            $list_image = $row['list_image'];
-
-
-
-    } else {
-        header("Location: ../services.html " );
-    }
+    $query = "SELECT * FROM `services` WHERE id = '{$service_id}'";
+    $select__service = mysqli_query($connection, $query);
+    $row = mysqli_fetch_assoc($select__service);
+    $id = $row['id'];
+    $name = $row['name'];
+    $main_img = $row['main_img'];
+    $description = $row['description'];
+    $list_image = $row['list_image'];
+} else {
+    header("Location: ../services.html ");
+}
 
 ?>
 <!DOCTYPE html>
@@ -35,6 +32,12 @@
     <link rel="stylesheet" href="../styles/services.css">
     <!-- services php styles-->
     <link rel="stylesheet" href="./styles/services.css">
+
+
+    <!--gallery styles--->
+    <link rel="stylesheet" href="../styles/gallery.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 </head>
 
 <body>
@@ -124,17 +127,33 @@
                     <!---services php container--->
                     <div class="services__container">
                         <div class="services__page_name">
-                            <p>SERVICES</p>
+                            <a href="../services.html">SERVICES</a>
                             <h4><?php echo $name; ?></h4>
                         </div>
 
                         <div class="services__block_mainimg">
-                            <img src="../styles/img/services/<?php echo $main_img;?>" alt="">
+                            <img src="../styles/img/services/<?php echo $main_img; ?>" alt="">
                         </div>
                         <div class="services__block__descpription">
                             <p>
                                 <?php echo $description; ?>
                             </p>
+                        </div>
+                        <div class="gallery__photos__wrapper">
+
+                            <?php
+                            $images = explode(",", $list_image);
+                            foreach ($images as $img) {
+                                $blick_img = $img;
+                            ?>
+                                <a href="../styles/img/content/<?php echo $img; ?>" data-fancybox="gallery" data-caption="Optional caption">
+                                    <img src="../styles/img/content/<?php echo $img; ?>" alt="" srcset="">
+                                </a>
+                            <?php
+                            }
+                            ?>
+
+
                         </div>
                     </div>
                     <!--main page footer---->
@@ -154,6 +173,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 
 </html>

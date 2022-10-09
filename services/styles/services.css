@@ -19,3 +19,12 @@
     color: #999;
     font-weight: 400;
 }
+.services__page_name a {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
