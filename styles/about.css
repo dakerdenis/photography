@@ -104,3 +104,13 @@
     height: 100%;
     object-fit: cover;
 }
+@media only screen and (max-width: 769px) {
+    .about__page__photos__wrapper{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .about__page__photos__img{
+        width: 47%;
+        margin-top: 10px;
+    }
+}
