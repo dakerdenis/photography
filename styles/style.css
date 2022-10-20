@@ -466,7 +466,15 @@ h6 {
   display: none;
   visibility: hidden;
 }
+.only__768{
+  display: none;
+  visibility: hidden;
+}
 @media only screen and (max-width: 769px) {
+  .only__768{
+    display: initial;
+    visibility: visible;
+  }
   .navigation__container{
     display: none;
     visibility: hidden;
