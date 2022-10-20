@@ -188,3 +188,11 @@
     font-weight: 400;
     color: #999;
 }
+@media only screen and (max-width: 660px) {
+    .services__photo_link_element{
+        width: 49%;
+        margin-top: 10px;
+        height: 40vh;
+    }
+  
+  }

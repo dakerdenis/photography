@@ -595,3 +595,10 @@ h6 {
   background-color: blue;
 }
 }
+@media only screen and (max-width: 550px) {
+  .gallery__photos__wrapper a {
+    width: 47%;
+  }
+
+
+}
