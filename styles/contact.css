@@ -166,3 +166,11 @@
     background-color: #000;
     color: #fff;
 }
+@media only screen and (max-width: 620px) {
+    .contact__form_info{
+        flex-direction: column;
+    }
+    .contact__form_info_block{
+        width: 100%;
+    }
+}

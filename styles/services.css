@@ -188,11 +188,21 @@
     font-weight: 400;
     color: #999;
 }
-@media only screen and (max-width: 660px) {
+.services__photo_link_element{
+    margin-top: 15px;
+}
+@media only screen and (max-width: 769px) {
     .services__photo_link_element{
         width: 49%;
         margin-top: 10px;
         height: 40vh;
     }
-  
+    .services__prices__wrapper{
+        justify-content: space-around;
+
+    }
+    .services__prices__element{
+        width: 48%;
+        height: 40vh;
+    }
   }
