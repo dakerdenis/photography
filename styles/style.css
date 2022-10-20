@@ -595,10 +595,17 @@ h6 {
   background-color: blue;
 }
 }
-@media only screen and (max-width: 550px) {
-  .gallery__photos__wrapper a {
-    width: 47%;
+@media only screen and (max-width: 550px){
+  .navigation__social_icons {
+    width: 50%;
   }
+}
 
-
+@media only screen and (max-width: 425px){
+  .__block_img-text-container{
+    width: 90%;
+  }
+  .navigation__social_icons {
+    width: 80%;
+  }
 }
