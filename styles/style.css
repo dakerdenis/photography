@@ -462,3 +462,18 @@ h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+@media only screen and (max-width: 769px) {
+  .navigation__container{
+    display: none;
+    visibility: hidden;
+  }
+  .content__container{
+    width: 100%;
+  }
+  .content__block_img img{
+    height: 100%;
+  }
+  .__block_img-text-container {
+    width: 50%;
+  }
+}
