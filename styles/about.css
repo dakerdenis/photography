@@ -114,3 +114,17 @@
         margin-top: 10px;
     }
 }
+@media only screen and (max-width: 426px) {
+    .about__page__photos__img {
+        width: 97%;
+        margin-top: 15px;
+    }
+    .about__page__photos__img img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .about__page__desc__sign-img {
+        width: 50%;
+    }
+}

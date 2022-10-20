@@ -48,3 +48,9 @@
   
   
   }
+  @media only screen and (max-width: 426px) {
+    .gallery__photos__wrapper a{
+        height: 18vh;
+        margin-top: 1.5em;
+    }
+  }

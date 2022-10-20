@@ -206,3 +206,22 @@
         height: 40vh;
     }
   }
+  @media only screen and (max-width: 425px) {
+    .services__photo_link_element {
+        width: 97%;
+    margin-top: 10px;
+    height: 38vh;
+    }
+    .services__page__wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+    .services__photo_link_element img {
+        /* height: 100%; */
+        width: 100%;
+        object-fit: cover;
+    }
+    .services__prices__element{
+        width: 97%;
+    }
+  }
