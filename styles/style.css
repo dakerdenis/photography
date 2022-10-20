@@ -574,6 +574,15 @@ h6 {
 }
 .header_button{
   color: #fff;
+  position: absolute;
+  top: 2%;
+  right: 3%;
+}
+.header_button img {
+  width: 40px;
+}
+.navigation__logo a{
+  width: 60%;
 }
 .menu__body._active{
   transform: translateX(0%);
