@@ -594,6 +594,11 @@ h6 {
 .menu__link {
   background-color: blue;
 }
+.navigation__logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 }
 @media only screen and (max-width: 550px){
   .navigation__social_icons {
